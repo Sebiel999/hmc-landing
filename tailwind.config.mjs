@@ -15,6 +15,7 @@ export default {
         black: "var(--black)",
         dark: "var(--dark)",
         white: "var(--white)",
+        primary: "var(--primary)"
       },
     },
   },
