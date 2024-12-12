@@ -25,6 +25,8 @@
     --dark: #191a23;
     --white: #f3f3f3;
     --primary: #003366;
+    --secondary: #1B1B1B;
+    --action: #336B87;
   }
 
   @layer base {
@@ -95,7 +97,7 @@
       @apply bg-dark text-white rounded-lg px-[35px] py-5 transition-all duration-200;
     }
     .btn-primary:hover {
-      @apply bg-green text-black transform scale-105;
+      @apply bg-action transform scale-105;
     }
 
     .btn-secondary {
