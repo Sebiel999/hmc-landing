@@ -101,7 +101,7 @@
     }
 
     .btn-secondary {
-      @apply bg-transparent text-black px-[35px] py-5 rounded-lg border border-solid border-black transition-all duration-200;
+      @apply bg-transparent text-black text-base px-4 py-2 rounded-lg border border-solid border-black transition-all duration-200;
     }
     .btn-secondary:hover {
       @apply bg-black text-white border-green transform scale-105;
@@ -124,6 +124,10 @@
 
     .blackhead {
       @apply bg-black text-white rounded-[7px] px-[7px];
+    }
+
+    .primaryhead {
+      @apply bg-secondary text-white rounded-[7px] px-[7px];
     }
   }
 }

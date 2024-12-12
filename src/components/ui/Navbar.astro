@@ -3,24 +3,20 @@ import { Image } from "astro:assets";
 
 const navLinks = [
   {
-    name: "About us",
+    name: "Sobre nosotros",
     href: "#about",
   },
   {
-    name: "Services",
+    name: "Servicios",
     href: "#services",
   },
   {
-    name: "Use cases",
-    href: "#cases",
+    name: "Beneficios para tu empresa",
+    href: "#beneficios",
   },
   {
-    name: "Testimonials",
+    name: "Testimonios",
     href: "#testimonials",
-  },
-  {
-    name: "Contact",
-    href: "#contact",
   },
 ];
 
@@ -29,7 +25,7 @@ import brand from "../../assets/brand.svg";
 ---
 
 <div
-  class="bg-[#fff] fixed w-full top-0 z-10 py-[30px] h-auto flex justify-center"
+  class="bg-[#fff] fixed w-full top-0 z-10 py-[20px] h-auto flex justify-center"
 >
   <nav
     aria-label="Main Navigation"
@@ -40,7 +36,7 @@ import brand from "../../assets/brand.svg";
     <!-- Brand -->
     <div class="pl-4 xl:flex-none">
       <a href="#home">
-        <Image src={brand} alt="Brand Logo" class="w-[150px]" loading="eager" />
+        <Image src={brand} alt="Brand Logo" class="w-[100px]" loading="eager" />
       </a>
     </div>
 
@@ -54,7 +50,7 @@ import brand from "../../assets/brand.svg";
         {
           navLinks.map((link) => {
             return (
-              <li class="mx-4 p-4 xl:mx-0 px-0">
+              <li class="mx-4 p-4 xl:mx-0 px-0 text-base">
                 <a id={link.name} href={link.href} class="block">
                   {link.name}
                 </a>
@@ -66,7 +62,7 @@ import brand from "../../assets/brand.svg";
 
       <!-- Login -->
       <div class="flex xl:flex-row xl:items-center px-4 xl:gap-4 flex-col">
-        <button class="btn-secondary">Contáctanos!</button>
+        <a href="#contact"><button class="btn-secondary">Contáctanos!</button></a>
       </div>
     </div>
 
