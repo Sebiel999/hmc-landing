@@ -129,5 +129,9 @@
     .primaryhead {
       @apply bg-secondary text-white rounded-[7px] px-[7px];
     }
+
+    .secondaryhead {
+      @apply bg-mb-800 text-white rounded-[7px] px-[7px];
+    }
   }
 }

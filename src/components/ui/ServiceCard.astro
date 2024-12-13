@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import Card from "./Card.astro";
 
-import gob from "../../assets/icon6.svg";
+import gob from "../../assets/icon8.svg";
 import wob from "../../assets/icon7.svg";
 
 /* 
@@ -16,13 +16,13 @@ const { index, titleTop, titleBottom, img, alt, link } = Astro.props;
 
 <Card isUnderline={true}>
   <div
-    class=`h-[300px] w-full sm:h-full lg:gap-[60px] grid custom-grid lg:grid-cols-2 lg:grid-rows-1 p-8 sm:p-[50px] rounded-[45px] ${index === 1 ? 'bg-white' : index === 2 ? 'bg-green' : 'bg-dark text-white'}`
+    class=`h-[300px] w-full sm:h-full lg:gap-[60px] grid custom-grid lg:grid-cols-2 lg:grid-rows-1 p-8 sm:p-[50px] rounded-[45px] ${index === 1 ? 'bg-white' : index === 2 ? 'bg-mb-800' : 'bg-dark text-white'}`
   >
     <h3 class=`flex flex-col col-span-2 lg:col-span-1`>
-      <span class=`w-[fit-content] ${index === 1 ? 'greenhead' : 'whitehead'}`
+      <span class=`w-[fit-content] my-5 text-2xl ${index === 1 ? 'primaryhead' : index === 2 ? 'whitehead' : 'secondaryhead'}`
         >{titleTop}</span
       >
-      <span class=`w-[fit-content] ${index === 1 ? 'greenhead' : 'whitehead'}`
+      <span class=`w-[fit-content] text-base ${index === 1 ? 'primaryhead' : index === 2 ? 'whitehead' : 'secondaryhead'}`
         >{titleBottom}</span
       >
     </h3>

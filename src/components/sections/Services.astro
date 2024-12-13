@@ -13,49 +13,25 @@ import c6 from "../../assets/pics/card-pic6.png";
 const cards = [
   {
     index: 1,
-    titleTop: "Search Engine",
-    titleBottom: "Optimization",
+    titleTop: "Básico",
+    titleBottom: "Inspección y limpieza anual",
     img: c1,
     alt: "SEO",
     link: "https://google.com",
   },
   {
     index: 2,
-    titleTop: "Pay-per-click",
-    titleBottom: "advertising",
+    titleTop: "Intermedio",
+    titleBottom: "Inspecciones semestrales y soporte técnico",
     img: c2,
     alt: "SEO",
     link: "https://google.com",
   },
   {
     index: 3,
-    titleTop: "Social Media",
-    titleBottom: "Marketing",
+    titleTop: "Premium",
+    titleBottom: "Mantenimiento integral con piezas de repuesto incluidas",
     img: c3,
-    alt: "SEO",
-    link: "https://google.com",
-  },
-  {
-    index: 1,
-    titleTop: "Email",
-    titleBottom: "Marketing",
-    img: c4,
-    alt: "SEO",
-    link: "https://google.com",
-  },
-  {
-    index: 2,
-    titleTop: "Content",
-    titleBottom: "Creation",
-    img: c5,
-    alt: "SEO",
-    link: "https://google.com",
-  },
-  {
-    index: 3,
-    titleTop: "Analytics and",
-    titleBottom: "Tracking",
-    img: c6,
     alt: "SEO",
     link: "https://google.com",
   },
@@ -67,8 +43,8 @@ const description =
 
 <Section id="services">
   <div class="mt-[140px] mb-5">
-    <SectionTitle sectionTitle="Services" description={description} />
-    <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10">
+    <SectionTitle sectionTitle="Servicios" description={description} />
+    <div class="grid lg:grid-cols-3 lg:grid-rows-1 gap-10">
       {
         cards.map((card) => (
           <ServiceCard
