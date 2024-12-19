@@ -1,9 +1,6 @@
 ---
-import { Image } from "astro:assets";
 import Card from "./Card.astro";
 
-import gob from "../../assets/icon8.svg";
-import wob from "../../assets/icon7.svg";
 
 /* 
 1. White card with green title and green on black icon 
@@ -11,7 +8,7 @@ import wob from "../../assets/icon7.svg";
 3. Black card with white title and white on black icon
 */
 
-const { index, titleTop, titleBottom, img, alt, link } = Astro.props;
+const { titleTop, titleBottom } = Astro.props;
 ---
 
 <Card isUnderline={true}>
