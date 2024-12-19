@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        grotesk: ["Grotesk", "sans-serif"],
+        montserrat: ["Montserrat"],
       },
       fontWeight: {
         regular: 400,
