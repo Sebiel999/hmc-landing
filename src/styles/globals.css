@@ -3,17 +3,18 @@
 @tailwind utilities;
 
 @layer base {
+
   @font-face {
-    font-family: "Grotesk";
-    src: url("/fonts/grotesk/SpaceGrotesk-Regular.woff"), format("woff");
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf"), format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "Grotesk";
-    src: url("/fonts/grotesk/SpaceGrotesk-Medium.woff"), format("woff");
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf"), format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -32,7 +33,7 @@
   @layer base {
     * {
       box-sizing: border-box;
-      font-family: "Grotesk", sans-serif;
+      font-family: "Montserrat";
       scroll-behavior: smooth;
     }
 
@@ -127,7 +128,7 @@
     }
 
     .primaryhead {
-      @apply bg-secondary text-white rounded-[7px] px-[7px];
+      @apply text-primary font-bold px-[7px];
     }
 
     .secondaryhead {
