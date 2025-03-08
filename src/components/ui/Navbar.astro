@@ -3,12 +3,12 @@ import { Image } from "astro:assets";
 
 const navLinks = [
   {
-    name: "Sobre nosotros",
-    href: "#aboutus",
-  },
-  {
     name: "Servicios",
     href: "#services",
+  },
+  {
+    name: "Proceso",
+    href: "#process",
   },
   {
     name: "Propuesta",
@@ -17,6 +17,10 @@ const navLinks = [
   {
     name: "Beneficios para tu empresa",
     href: "#beneficios",
+  },
+  {
+    name: "Sobre nosotros",
+    href: "#aboutus",
   },
   {
     name: "Testimonios",
@@ -47,7 +51,8 @@ import brand from "../../assets/brand.svg";
     <!-- Nav Menu -->
     <div
       id="navmenu"
-      class=" w-full absolute top-full z-10 xl:static xl:flex xl:flex-grow xl:items-center xl:justify-center overflow-hidden transition-height duration-500 h-0 xl:h-auto"
+      class="bg-white w-full absolute top-full z-10 xl:static xl:flex xl:flex-grow xl:items-center xl:justify-center overflow-hidden transition-height duration-500 h-0 xl:h-auto"
+      style="padding-bottom: 20px;"
     >
       <!-- Nav Links -->
       <ul class="xl:flex xl:flex-grow xl:justify-center xl:gap-10">
