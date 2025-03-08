@@ -3,31 +3,39 @@ import { Image } from "astro:assets";
 import Card from "../ui/Card.astro";
 import Section from "./Section.astro";
 
-import propImg from "../../assets/pics/proposal-pic.png";
+import propImg from "../../assets/pics/proposal-pic.svg";
 ---
 
-<Section>
+<Section id="proposal">
   <Card>
     <div
-      class="flex bg-[#F3F3F3] rounded-[45px] p-[60px] relative mt-[123px] mb-[163px]"
+      class="grid grid-cols-1 grid-template md:grid-cols-2 md:grid-rows-1 mt-[135px] bg-[#F3F3F3] rounded-md"
+      style="margin-bottom: 20px;"
     >
-      <div class="w-full md:w-[40%] flex flex-col gap-[26px]">
-        <h2>Let's make things happen</h2>
-        <p>
-          Contact us today to learn more about how our digital marketing
-          services can help your business grow and succeed online.
+      <div class="w-full" style="padding: 20px;">
+        <h2 class="text-primary">¡Hagamos que las cosas pasen!</h2>
+        <p class="my-[35px] text-gray-600">
+          Contáctanos hoy e infórmate sobre nuestro negocio,
+          si vemos interes de tu parte te haremos una Propuesta
+          que no podrás rechazar.
         </p>
-        <button class="btn-primary">Get your free proposal</button>
+        <button class="btn-primary">Obtén tu propuesta gratis</button>
       </div>
       <picture
-        class="hidden md:flex absolute right-[-10%] lg:right-0 top-[-15%] h-[450px] items-center justify-center"
+        class="relative row-span-1 md:row-span-3 inline-flex justify-center items-center"
       >
         <Image
           src={propImg}
-          alt="This is an illustration"
-          class="hidden md:flex lg:h-full lg:w-auto"
+          alt="Proposal Ilustration"
+          class="w-[400px] rounded-lg"
+          loading="eager"
         />
       </picture>
     </div>
   </Card>
 </Section>
+<style>
+  .grid-template {
+    grid-template-rows: auto 1fr;
+  }
+</style>

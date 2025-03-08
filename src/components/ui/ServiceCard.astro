@@ -8,18 +8,18 @@ import Card from "./Card.astro";
 3. Black card with white title and white on black icon
 */
 
-const { titleTop, titleBottom } = Astro.props;
+const { index, titleTop, titleBottom } = Astro.props;
 ---
 
 <Card isUnderline={true}>
-  <div class=`flex flex-col items-start p-4 gap-4`>
+  <div class=`flex bg-[#fff] flex-col items-start p-4 gap-4`>
     <svg
-      width="42"
-      height="42"
+      width="54"
+      height="54"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      class="text-primary"
+      class=`text-white p-2 ${index == 2 ? "bg-[#FFC107]" : (index == 3 ? "bg-[#FF8C42]" : "bg-primary")} rounded-md`
     >
       <path
         fill-rule="evenodd"
@@ -42,7 +42,7 @@ const { titleTop, titleBottom } = Astro.props;
     </h3>
     <hr class="border border-gray-100 w-full" />
     <button
-      class="inline-flex px-4 py-2 justify-center w-full border transition border-gray-300 rounded-md font-medium shadow hover:bg-action hover:text-white"
+      class={"inline-flex px-4 py-2 justify-center w-full border transition border-gray-500 rounded-md font-medium shadow hover:bg-action hover:text-white "}
     >
       Más información
     </button>

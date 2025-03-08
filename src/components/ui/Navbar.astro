@@ -11,6 +11,10 @@ const navLinks = [
     href: "#services",
   },
   {
+    name: "Propuesta",
+    href: "#proposal",
+  },
+  {
     name: "Beneficios para tu empresa",
     href: "#beneficios",
   },
@@ -21,10 +25,11 @@ const navLinks = [
 ];
 
 import bars from "../../assets/bars.svg";
+import brand from "../../assets/brand.svg";
 ---
 
 <div
-  class="bg-[#fff] fixed w-full top-0 z-10 py-[20px] h-auto flex justify-center"
+  class="bg-white fixed w-full top-0 z-10 py-[20px] h-auto flex justify-center"
 >
   <nav
     aria-label="Main Navigation"
@@ -35,13 +40,14 @@ import bars from "../../assets/bars.svg";
     <!-- Brand -->
     <div class="pl-4 xl:flex-none">
       <a href="#home">
+        <Image src={brand} alt="hmc-logo" class="" />
       </a>
     </div>
 
     <!-- Nav Menu -->
     <div
       id="navmenu"
-      class="bg-[#fff] w-full absolute top-full z-10 xl:static xl:flex xl:flex-grow xl:items-center xl:justify-center overflow-hidden transition-height duration-500 h-0 xl:h-auto"
+      class=" w-full absolute top-full z-10 xl:static xl:flex xl:flex-grow xl:items-center xl:justify-center overflow-hidden transition-height duration-500 h-0 xl:h-auto"
     >
       <!-- Nav Links -->
       <ul class="xl:flex xl:flex-grow xl:justify-center xl:gap-10">
