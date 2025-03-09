@@ -113,7 +113,8 @@ const { index, title, description } = Astro.props;
 
             // Set height according to content
             accordionItem.style.height = accordionItem.scrollHeight + "px";
-            accordionItem.classList.add("bg-green");
+            accordionItem.classList.add("bg-action");
+            accordionItem.classList.add("text-white");
             accordionIcon.classList.add("rotate-180");
             accordionIcon.classList.add("collapsed");
           } else {
@@ -124,7 +125,8 @@ const { index, title, description } = Astro.props;
             // height is 60, because the toggle's height is 60, the content is hidden
             accordionItem.style.height = "160px";
             accordionIcon.classList.remove("rotate-180");
-            accordionItem.classList.remove("bg-green");
+            accordionItem.classList.remove("bg-action");
+            accordionItem.classList.remove("text-white");
             accordionIcon.classList.remove("collapsed");
           }
 
