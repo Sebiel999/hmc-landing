@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import Facebook from "../../assets/facebook.svg";
 import Linkedin from "../../assets/linkedin.svg";
-import Logo from "../../assets/logo-alt.svg";
+import BrandAlt from "../../assets/brand-alt.svg";
 import Twitter from "../../assets/twitter.svg";
 import ShortForm from "../ui/ShortForm.astro";
 
@@ -13,18 +13,19 @@ const logos = [
 ];
 
 const links = [
-  { name: "About us", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Use Cases", href: "#cases" },
-  { name: "Pricing", href: "#Testimonials" },
-  { name: "Blog", href: "#Home" },
+  { name: "Servicios", href: "#services" },
+  { name: "Proceso", href: "#process" },
+  { name: "Propuesta", href: "#proposal" },
+  { name: "Beneficios", href: "#beneficios" },
+  { name: "Sobre nosotros", href: "#about" },
+  { name: "Testimonios", href: "#testimonials" },
 ];
 ---
 
 <section class="sm:px-5">
   <div class="w-full max-w-[1240px] mx-auto">
     <div
-      class="px-[15px] bg-dark text-white py-[55px] lg:px-[60px] sm:rounded-t-[45px]"
+      class="px-[15px] bg-secondary text-white py-[55px] lg:px-[60px] sm:rounded-t-[45px]"
     >
       <div>
         <div
@@ -32,7 +33,7 @@ const links = [
         >
           <picture>
             <a href="#home">
-              <Image src={Logo} alt="Logo for Kreatif Brand" />
+              <Image src={BrandAlt} alt="Logo for Kreatif Brand" />
             </a>
           </picture>
           <ul class="flex flex-col sm:flex-row gap-5">
@@ -69,12 +70,12 @@ const links = [
           <div
             class="flex text-center lg:text-start flex-col w-full lg:w-[30%]"
           >
-            <h3 class="mb-5">Contact us:</h3>
+            <h3 class="mb-5">Contáctate con nosotros:</h3>
             <div class="flex flex-col justify-between gap-4">
-              <span> Email: examplemail.com </span>
-              <span> Phone: +123 456 789 </span>
+              <span> Correo electrónico: examplemail.com </span>
+              <span> Celular: +123 456 789 </span>
               <span class="lg:w-3/4">
-                Address: 1234 Street Name, City Name, Country Name
+                Dirección: 1234 Nombre de la calle, Nombre de la ciudad, Nombre del pais
               </span>
             </div>
           </div>

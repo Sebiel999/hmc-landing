@@ -4,7 +4,7 @@ import decorForm from "../../assets/pics/contact-pic.png";
 ---
 
 <div
-  class="flex relative justify-start items-center p-[60px] bg-[#F3F3F3] rounded-[45px] overflow-hidden"
+  class="grid grid-cols-1 grid-template md:grid-cols-2 md:grid-rows-1 mt-[135px] bg-[#F3F3F3] rounded-md"
 >
   <form class="bg-white sm:p-6 h-full w-full lg:max-w-lg">
     <div class="flex flex-col sm:flex-row gap-[35px] sm:items-center mb-10">
@@ -15,7 +15,7 @@ import decorForm from "../../assets/pics/contact-pic.png";
           name="checkbox1"
           class="form-checkbox text-black"
         />
-        <label for="checkbox1" class="text-black">Say Hi</label>
+        <label for="checkbox1" class="text-black">Información general</label>
       </div>
       <div class="flex items-center gap-[14px]">
         <input
@@ -25,47 +25,52 @@ import decorForm from "../../assets/pics/contact-pic.png";
           class="form-checkbox text-black"
         />
         <label for="checkbox2" class="flex items-center text-black"
-          >Get a Quote</label
+          >Obtener cotización</label
         >
       </div>
     </div>
 
     <div class="mb-4">
-      <label for="name" class="block text-black mb-2">Name*</label>
+      <label for="name" class="block text-black mb-2">Nombre *</label>
       <input
         type="text"
         id="name"
         name="name"
-        placeholder="Name"
+        placeholder="Nombre"
         class="w-full px-[30px] py-[18px] border border-black rounded-[14px] text-black outline-none"
       />
     </div>
 
     <div class="mb-4">
-      <label for="email" class="block text-black mb-2">Email*</label>
+      <label for="email" class="block text-black mb-2">Correo electrónico *</label>
       <input
         type="email"
         id="email"
         name="email"
-        placeholder="Email"
+        placeholder="Correo electrónico"
         class="w-full px-[30px] py-[18px] border border-black rounded-[14px] text-black outline-none"
       />
     </div>
 
     <div class="mb-4">
-      <label for="message" class="block text-black mb-2">Message*</label>
+      <label for="message" class="block text-black mb-2">Mensaje *</label>
       <textarea
         id="message"
         name="message"
-        placeholder="Message"
+        placeholder="Mensaje"
         class="w-full px-[30px] py-[18px] border border-black rounded-[14px] text-black outline-none"
       ></textarea>
     </div>
 
-    <button type="submit" name="submit" class="btn-primary w-full">Send</button>
+    <button type="submit" name="submit" class="btn-primary w-full">Enviar</button>
   </form>
-  <picture class="absolute right-[-25%] top-[2%] bottom-[2%] hidden lg:block">
-    <Image src={decorForm} alt="decor" />
+  <picture class="relative row-span-1 md:row-span-3 inline-flex justify-center items-center">
+    <Image 
+      src={decorForm} 
+      alt="decor"
+      class="w-[700px] rounded-lg"
+      loading="eager" 
+    />
   </picture>
 </div>
 <style>
@@ -89,7 +94,7 @@ import decorForm from "../../assets/pics/contact-pic.png";
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--green);
+    background: var(--action);
     transform: scale(0);
     transition: transform 0.1s ease-in-out;
   }
