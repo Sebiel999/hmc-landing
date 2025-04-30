@@ -67,6 +67,17 @@
       font-weight: 500;
     }
 
+    .navbar-element:hover {
+
+      color: #fff;
+      background: #336B87;
+      background: linear-gradient(135deg,rgba(51, 107, 135, 1) 0%, rgba(58, 131, 160, 1) 50%, rgba(86, 159, 186, 1) 100%);
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 0.375rem;
+
+    }
+
     @media (max-width: 640px) {
       body {
         font-size: 16px;
