@@ -29,5 +29,75 @@ const { ...props } = Astro.props;
       <slot />
       <Footer />
     </main>
+    <style>
+      #whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        background-color: #25D366;
+        border-radius: 50%;
+        padding: 12px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #whatsapp-button:hover {
+        background-color: #128C7E; /* tono más oscuro */
+      }
+
+      #whatsapp-tooltip {
+        position: fixed;
+        bottom: 30px;
+        right: 80px;
+        background-color: #128C7E;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(5px);
+        transition: all 0.2s ease;
+      }
+
+      #whatsapp-button:hover + #whatsapp-tooltip {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 768px) {
+        #whatsapp-tooltip {
+          display: none; /* Ocultamos el mensaje en móviles */
+        }
+      }
+    </style>
+
+    <a
+      href="#"
+      id="whatsapp-button"
+      target="_blank"
+      aria-label="Chatear por WhatsApp"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+        width="30"
+        height="30"
+      />
+    </a>
+    <div id="whatsapp-tooltip">Escríbenos por aquí</div>
+
+    <script>
+      const phone = "573116556243"; // Tu número con código país
+
+      const whatsappLink = `https://wa.me/${phone}`;
+
+      (document.getElementById("whatsapp-button") as HTMLAnchorElement).href = whatsappLink;
+    </script>
   </body>
 </html>
