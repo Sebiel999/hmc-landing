@@ -99,13 +99,6 @@ const { ...props } = Astro.props;
 
       (document.getElementById("whatsapp-button") as HTMLAnchorElement).href = whatsappLink;
 
-      // Detectar Opera GX en móvil
-      const isOperaGXMobile = /OPR/i.test(navigator.userAgent) && /Android|iPhone|iPad/i.test(navigator.userAgent);
-
-      if (isOperaGXMobile) {
-        alert("Es posible que Opera GX en tu dispositivo móvil no redirija correctamente a WhatsApp. Recomendamos usar Chrome o abrir WhatsApp Web directamente.");
-      }
-
     </script>
   </body>
 </html>
