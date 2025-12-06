@@ -112,7 +112,7 @@
       @apply bg-transparent text-black text-base px-4 py-2 rounded-lg border border-solid border-black transition-all duration-200;
     }
     .btn-secondary:hover {
-      @apply bg-black text-white border-green transform scale-105;
+      @apply bg-action border-gray-500 text-white transform scale-105;
     }
 
     .btn-tertiary {
